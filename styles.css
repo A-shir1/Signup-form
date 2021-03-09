@@ -4,9 +4,6 @@ body{
       background-color: hsl(0, 100%, 74%);
       height: 100vh;
       font-family: Poppins;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
       color: white;
       margin: 0 1.5rem;
 }
@@ -15,7 +12,7 @@ main{
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      height: 95vh;
 }
 
 #content{
@@ -97,6 +94,10 @@ main form{
       box-shadow: 0 4px 0px -1px hsl(154, 59%, 40%);
 }
 
+#butt2:hover{
+      background-color: hsl(154, 59%, 47%);
+}
+
 #formwrapper p{
       font-size: 0.65rem;
       color: hsl(246, 25%, 77%);
@@ -110,6 +111,55 @@ main form{
 #formwrapper p span:hover{
       cursor: pointer;
 }
+
+
+
+@media screen and (max-width: 650px){
+      main{
+            flex-direction: column;
+            height: 130vh;
+            /* background-color: aqua; */
+      }
+
+      #content{
+            margin: 0 0 2rem 0;
+            text-align: center;
+            /* background-color: yellow; */
+            width: 80%;
+      }
+
+      #content h1{
+            font-size: 1.7rem;
+            line-height: normal;
+      }
+
+      #content .text{
+            font-size: 0.9rem;
+      }
+
+      main #form{
+            width: 80%;
+            text-align: center;
+            align-items: center;
+      }
+
+      #butt1{
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+      }
+
+      #butt1 p{
+            width: 13rem;
+            text-align: center;
+      }
+
+      .attribution{
+            margin-top: 2rem;
+      }
+}
+
+
 
 .attribution { 
       font-size: 11px;
