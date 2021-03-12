@@ -138,9 +138,18 @@ main form{
       cursor: pointer;
 }
 
+@media screen and (max-width: 850px){
+      #content h1{
+            font-size: 2rem;
+      }
+
+      #content .text{
+            font-size: 1.2rem;
+      }
+}
 
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 700px){
       main{
             margin-top: 5rem;
             flex-direction: column;
