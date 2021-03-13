@@ -26,20 +26,32 @@
       <form>
         <div id="formwrapper">
           
-          <input type="text" placeholder="First Name" class="textfield" required pattern="[a-zA-Z]+"
-          oninvalid="setCustomValidity(' '); this.placeholder=''">
+          <div class="textbox">
+            <input type="text" placeholder="First Name" class="textfield" required pattern="[a-zA-Z]+"
+            oninvalid="setCustomValidity(' '); this.placeholder=''">
+            <i class="fas fa-exclamation-circle fa-lg invisible"></i>
+          </div>
           <p class="errormessage invisible efm">First Name cannot be empty</p>
 
-          <input type="text" placeholder="Last Name" class="textfield" required pattern="[a-zA-Z]+"
-          oninvalid="setCustomValidity(' '); this.placeholder=''">
+          <div class="textbox"> 
+            <input type="text" placeholder="Last Name" class="textfield" required pattern="[a-zA-Z]+"
+            oninvalid="setCustomValidity(' '); this.placeholder=''">
+            <i class="fas fa-exclamation-circle fa-lg invisible"></i>
+          </div>
           <p class="errormessage invisible elm">Last Name cannot be empty</p>
           
-          <input type="email" placeholder="Email Address" class="textfield" required pattern="[a-zA-Z]+"
-          oninvalid="setCustomValidity(' '); this.placeholder='email@example/com'">
+          <div class="textbox">
+            <input type="email" id= "emailbox" placeholder="Email Address" class="textfield" required pattern="[a-zA-Z]+"
+            oninvalid="setCustomValidity(' '); this.placeholder='email@example/com'">
+            <i class="fas fa-exclamation-circle fa-lg invisible"></i>
+          </div>
           <p class="errormessage invisible email">Looks like this is not an email</p>
           
-          <input type="password" placeholder="Password" class="textfield" required pattern="[a-zA-Z]+"
-          oninvalid="setCustomValidity(' '); this.placeholder=''">
+          <div class="textbox">
+            <input type="password" placeholder="Password" class="textfield" required pattern="[a-zA-Z]+"
+            oninvalid="setCustomValidity(' '); this.placeholder=''">
+            <i class="fas fa-exclamation-circle fa-lg invisible"></i>
+          </div>
           <p class="errormessage invisible epass">Password cannot be empty</p>
           
           <button id="butt2" class="butt"><strong>CLAIM YOUR FREE TRIAL</strong></button>

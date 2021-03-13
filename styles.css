@@ -27,7 +27,6 @@ main{
 }
 
 main #form{
-      /* background-color: yellow; */
       width: 40%; 
       height: 80%;     
       margin-left: 2rem;
@@ -83,19 +82,49 @@ main form{
       justify-content: space-around;
 }
 
-#formwrapper .textfield{
+#formwrapper .textbox{
       width: 100%;
-      height: 3rem;
       border-radius: 3.5px;
       border: 1px solid rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+#formwrapper .textbox:focus-within{
+      border: 1.5px solid black;
+}
+
+i{
+      color: hsl(0, 100%, 68%);;
+}
+
+#formwrapper .textfield{
+      width: 85%;
+      height: 3rem;
+      border: none;
       position: relative;
 }
 
-#formwrapper input[type="email"].textfield::-webkit-input-placeholder {
-      color: hsl(0, 100%, 68%);
-      opacity: 1;
+.textfield:focus{
+      outline: none;
 }
 
+
+#formwrapper input[type="email"].textfield::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: hsl(0, 100%, 68%);
+      opacity: 1; /* Firefox */
+}
+    
+#formwrapper input[type="email"].textfield:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: hsl(0, 100%, 68%);
+}
+    
+#formwrapper input[type="email"].textfield::-ms-input-placeholder { /* Microsoft Edge */
+      color: hsl(0, 100%, 68%);
+}
+    
+ 
 #formwrapper .err{
       border: 1.5px solid hsl(0, 100%, 68%);
 }
@@ -149,20 +178,18 @@ main form{
 }
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 650px){
       main{
             margin-top: 5rem;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100%;
-            /* background-color: aqua; */
       }
 
       #content{
             margin: 0 0 2rem 0;
             text-align: center;
-            /* background-color: yellow; */
             width: 80%;
       }
 
