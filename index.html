@@ -27,28 +27,28 @@
         <div id="formwrapper">
           
           <div class="textbox">
-            <input type="text" placeholder="First Name" class="textfield" required pattern="[a-zA-Z]+"
+            <input type="text" name="FName" placeholder="First Name" class="textfield" required pattern="[a-zA-Z]+"
             oninvalid="setCustomValidity(' '); this.placeholder=''">
             <i class="fas fa-exclamation-circle fa-lg invisible"></i>
           </div>
           <p class="errormessage invisible efm">First Name cannot be empty</p>
 
           <div class="textbox"> 
-            <input type="text" placeholder="Last Name" class="textfield" required pattern="[a-zA-Z]+"
+            <input type="text" name="LName" placeholder="Last Name" class="textfield" required pattern="[a-zA-Z]+"
             oninvalid="setCustomValidity(' '); this.placeholder=''">
             <i class="fas fa-exclamation-circle fa-lg invisible"></i>
           </div>
-          <p class="errormessage invisible elm">Last Name cannot be empty</p>
+          <p class="errormessage invisible">Last Name cannot be empty</p>
           
           <div class="textbox">
-            <input type="email" id= "emailbox" placeholder="Email Address" class="textfield" required pattern="[a-zA-Z]+"
+            <input type="email" id= "emailbox" name="Email" placeholder="Email Address" class="textfield" required pattern="[a-zA-Z]+"
             oninvalid="setCustomValidity(' '); this.placeholder='email@example/com'">
             <i class="fas fa-exclamation-circle fa-lg invisible"></i>
           </div>
-          <p class="errormessage invisible email">Looks like this is not an email</p>
+          <p class="errormessage invisible">Looks like this is not an email</p>
           
           <div class="textbox">
-            <input type="password" placeholder="Password" class="textfield" required pattern="[a-zA-Z]+"
+            <input type="password" name="Password" placeholder="Password" class="textfield" required pattern="[a-zA-Z]+"
             oninvalid="setCustomValidity(' '); this.placeholder=''">
             <i class="fas fa-exclamation-circle fa-lg invisible"></i>
           </div>

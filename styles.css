@@ -3,7 +3,7 @@ body{
       background-image: url("images/bg-intro-desktop.png");
       background-color: hsl(0, 100%, 74%);
       height: 100vh;
-      font-family: Poppins;
+      font-family: 'Poppins', sans-serif;
       color: white;
       margin: 0 1.5rem;
 }
@@ -111,19 +111,13 @@ i{
 }
 
 
-#formwrapper input[type="email"].textfield::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: hsl(0, 100%, 68%);
-      opacity: 1; /* Firefox */
+#emailbox.custom-placeholder::placeholder {
+      color: red;
 }
-    
-#formwrapper input[type="email"].textfield:-ms-input-placeholder { /* Internet Explorer 10-11 */
-      color: hsl(0, 100%, 68%);
-}
-    
-#formwrapper input[type="email"].textfield::-ms-input-placeholder { /* Microsoft Edge */
-      color: hsl(0, 100%, 68%);
-}
-    
+
+#email:valid{
+      background-color: white;
+}       
  
 #formwrapper .err{
       border: 1.5px solid hsl(0, 100%, 68%);

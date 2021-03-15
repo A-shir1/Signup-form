@@ -15,6 +15,13 @@ button.addEventListener("click", function(){
                   sign.classList.remove("invisible");
                   eMsg.classList.remove("invisible");
                   box.classList.add("err");
+                  emailBox.classList.add("custom-placeholder");
+            }
+            else{
+                  sign.classList.add("invisible");
+                  eMsg.classList.add("invisible");
+                  box.classList.remove("err");
+                  emailBox.classList.add("custom-placeholder");
             }
       }
 });
